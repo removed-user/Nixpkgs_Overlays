@@ -53,5 +53,5 @@ The individual bootstrap tools in the custom set are only computed when specific
 preventing massive evaluation overhead upon loading the flake.
 
 ### Pin the flake inputs lockfile:
-Bootstrapping structures can experience structurutilizevariable modifications between minor commits. 
+Bootstrapping structures can experience structural and variable modifications between minor commits. 
 Pinning your input nixpkgs revision inside flake.lock guarantees that your path traversals (pkgs.stdenv.bootstrapTools) do not break due to upstream restructuring.
